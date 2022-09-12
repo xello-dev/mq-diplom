@@ -14,10 +14,11 @@
 </head>
 
 <!-- ФОРМА -->
-<div class="podlozhka hidden" >
-    <div class="forma_zayavki">
-        <div class="close"></div>
-        <header class="header_form">ВАШ ФИДБЕК</header>
+<div class="form_background hidden">
+    <div class="order_form">
+        <label class="visually-hidden">Закрыть форму</label>
+        <button class="close_button"></button>
+        <header class="form_header">ВАШ ФИДБЕК</header>
         <form action="">
             <section class="questions">
                 <label>Как часто вы заходите на сайт?
@@ -35,16 +36,13 @@
             <section class="questions">
                 <span>Вы подписаны на рассылку?</span>
                 <div class="radio_questions">
-                    <input class="raio_form" id="rad1" type="radio" name="rad" /><label for="rad1"> Да </label>
-                    <input class="raio_form" id="rad2" type="radio" name="rad" /><label for="rad2"> Нет </label>
+                    <input class="raio_form" id="rad1" type="radio" name="rad" c><label for="rad1"> Да </label>
+                    <input class="raio_form" id="rad2" type="radio" name="rad"><label for="rad2"> Нет </label>
                 </div>
             </section>
             <section class="questions">
-                <label>Расскажите, какой контент вы хотили бы видеть на нашем сайте?
-                    <!-- <input type="text" id="more_recipes" name="e-mail" placeholder="Может, больше рецептов?" /><br> -->
-                    <br>
-                    <textarea name="" id="text_area" rows="5" placeholder="Может, больше рецептов?"></textarea>
-                </label>
+                <p>Расскажите, какой контент вы хотили бы видеть на нашем сайте?</p>                    
+                    <textarea name="" id="text_area" rows="5" placeholder="Может, больше рецептов?"></textarea>                
             </section>
             <button class="buttons">Отправить</button>
         </form>
@@ -57,8 +55,7 @@
     <Header class="header">
         <div class="header_menu">
             <a href="#">
-                <div class="logo"></div>
-
+                <img class="logo" src="svg/noemi-logo.svg" alt="">
             </a>
             <div class="burger">
             </div>
@@ -378,7 +375,9 @@
                     <label class="visually-hidden" for="search">
                         Поиск по сайту </label>
                     <input id="search" name="поле ввода для поиска" placeholder="Найти..." type="search">
-                    <button class="buttons seatch_button" type="submit"></button>
+                    <button class="buttons seatch_button" type="submit">
+                        <label class="visually-hidden" for="seatch_button">Найти</label>
+                    </button>
 
                 </form>
             </section>
@@ -390,7 +389,7 @@
 
                 <label class="visually-hidden" for="subscribe">
                     Подписка на рассылку</label>
-                <input type="text" id="subscribe" name="e-mail" placeholder="Ваш e-mail адрес" /><br>
+                <input type="text" id="subscribe" name="e-mail" placeholder="Ваш e-mail адрес" />
                 <input class="buttons" type="button" value="Подписаться" />
             </section>
 

@@ -22,6 +22,7 @@ body {
 p {
     line-height: 1.5;
     margin: 0;
+    padding-bottom: 15px;
 }
 
 .main_content .header_acide {
@@ -31,11 +32,9 @@ p {
 }
 
 .top_news {
-    display: flex;
-    width: 100%;
-    margin-right: 0;
+    display: flex;    
+    margin-right: 0;    
     flex-wrap: wrap;
-
 }
 
 .form_background {
@@ -151,6 +150,7 @@ select:focus {
 .shop_items {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .shop_item {
@@ -267,12 +267,20 @@ h3 {
 }
 
 
-ul {
+.lists_style {
     flex-wrap: wrap;
     list-style-type: none;
     padding: 0;
     display: flex;
     margin: 0;
+}
+
+.lists_style li {
+    margin-right: 25px;
+}
+
+.lists_style li:nth-last-child(-n+1) {
+    margin-right: 0;
 }
 
 a {
@@ -537,10 +545,7 @@ a:hover {
     height: 294px;
 }
 
-.right {
-    box-sizing: border-box;
-    width: 273px;
-}
+
 
 
 .news_anonce {
@@ -554,12 +559,12 @@ a:hover {
 }
 
 .main_content {
-    display: flex;
-    max-width: 1200px;
+    display: flex;    
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
     padding-top: 65px;
+    padding: 40px 34px 0;
 }
 
 .news_header {
@@ -608,6 +613,7 @@ select {
     top: -30px;
     right: 0px;
     cursor: pointer;
+    border: none;
 }
 
 .questions {
@@ -760,14 +766,14 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 30px 0;
 
 }
 
 .social_icon a {
     display: block;
     width: 20px;
-    height: 20px;    
-    margin: 30px;
+    height: 20px;        
     background-size: cover;
 }
 
@@ -818,12 +824,10 @@ footer {
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 2560px) {
 
 
-    .main_content {
-        padding: 40px 34px 0;
-    }
+    
 
 
     .shop_price {
@@ -837,22 +841,51 @@ footer {
     .top_new {
         display: flex;
         position: relative;
-        width: calc((100% / 2) - 40px);
+        width: calc((100% / 2) - 41px);
         padding: 0 20px 15px 20px;
         min-height: 245px;
         flex-wrap: wrap;
+        margin-right: 2px;
+        margin-bottom: 2px;
 
     }
+    .top_new:nth-child(2n) {
+        margin-right: 0!important;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .right {
+        width: 273px;
+        box-sizing: border-box;
+    }
+    
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+.shop_item {    
+    width: calc((100% / 2) - 10px); 
+    }
+    .shop_item {
+        flex: unset;
+        margin-bottom: 25px;
+    } 
+     
+    
 }
 
 @media screen and (min-width: 1200px) {
     .top_new {
         display: flex;
         position: relative;
-        width: calc((100%/4) - 40px);
+        width: calc((100%/4) - 41.5px);
         padding: 0 20px 15px 20px;
         min-height: 320px;
+        margin-right: 2px;
 
+    }
+    .top_new:nth-last-child(-n+1) {
+        margin-right: 0!important;
     }
 }
 

@@ -564,6 +564,7 @@ a:hover {
     justify-content: space-between;
     margin: 0 auto;
     padding-top: 65px;
+    max-width: 1200px;
     padding: 40px 34px 0;
 }
 

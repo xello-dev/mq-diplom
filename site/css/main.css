@@ -16,7 +16,23 @@ img {
 
 body {
     line-height: 1;
-    font-family: 'Sourse_Sans_light';
+    font-family: 'gothamprol';
+}
+
+
+
+@keyframes moveBackground {
+
+    0%,
+    to {
+        -webkit-transform: translate(0, 0) scale(1);
+        transform: translate(0, 0) scale(1)
+    }
+
+    50% {
+        -webkit-transform: translate(25%, 5%) scale(1.5);
+        transform: translate(5%, 5%) scale(2)
+    }
 }
 
 @font-face {
@@ -30,9 +46,34 @@ body {
 }
 
 @font-face {
-    font-family: "Playfair";
-    src: url("../fonts/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+    font-family: "gothamprol";
+    src: url("../fonts/gothamprolDisplay-VariableFont_wght.ttf") format("truetype");
 }
+
+@font-face {
+    font-family: "GothamPro";
+    src: url("../fonts/gothampro.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "GothamProl";
+    src: url("../fonts/gothampro_light.ttf") format("truetype");
+}
+
+
+@font-face {
+    font-family: "GothamProm";
+    src: url("../fonts/gothampro_medium.ttf") format("truetype");
+}
+
+
+@font-face {
+    font-family: "GothamProb";
+    src: url("../fonts/gothampro_black.ttf") format("truetype");
+}
+
+
+
 
 a {
     color: #E3C27D;
@@ -57,12 +98,18 @@ a:hover {
     position: relative;
 }
 
+.order {
+    display: none;
+}
+
 #map_719582516 {
     position: absolute;
 
     width: 100%;
     height: 100%;
 }
+
+
 
 .slide_4 {
     background: url('../images/genplan_bg.jpg') no-repeat;
@@ -71,6 +118,7 @@ a:hover {
     background-position: top 0 center;
     box-sizing: border-box;
     position: relative;
+    padding: 100px 7%;
 }
 
 .parking {
@@ -82,6 +130,45 @@ a:hover {
     position: relative;
 }
 
+.contacts {
+    background-color: #2e253b;    
+    height: 400px;    
+    position: relative;
+    padding: 150px 7%;
+    color: #FFF;
+    
+}
+
+.copyright {
+    background-color: #292234;
+    height: 40px;    
+    position: relative;
+    padding: 10px 7%;
+    display: flex;
+    color: #FFF;
+    align-items: center;
+    justify-content: end;
+}
+
+.hello {
+    margin-right: 9px;
+    font-size: 12px;
+
+}
+.copyright img {
+    width: 50px;
+}
+
+
+
+.contacts_blocks {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-between;
+}
+
+
 .map {
     background-size: cover;
     height: 1080px;
@@ -90,12 +177,10 @@ a:hover {
     position: relative;
 }
 
-.maps_info {
-    display: inline-block;
+.maps_info {    
     z-index: 111;
     position: absolute;
-    box-sizing: content-box;
-    padding: 15% 5%;
+    box-sizing: content-box;    
 }
 
 .maps_bg {
@@ -116,41 +201,70 @@ a:hover {
 }
 
 .slogan {
-    font-family: 'Playfair';
-    font-size: min(12vw, 100px);
-    width: 58%;
-    line-height: 1;
+    font-family: 'gothampro';
+    font-size: min(12vw, 90px);
+    width: 55%;
+    line-height: 0.9;
 }
 
-.top_menu_mobile  {
+.top_menu_mobile {
     display: none;
 }
+
 .header {
     font-size: 60px;
     position: relative;
     font-weight: 100;
-    font-family: 'Playfair';
+    font-family: 'gothamprol';
     display: inline;
     margin-bottom: 20px;
+    
 }
 
 
 .header2 {
     font-size: 60px;
     margin-bottom: 20px;
-    font-family: 'Playfair';
+    font-family: 'gothamprol';
 }
 
 .header3 {
     font-size: 60px;
     margin-bottom: 30px;
-    position: relative;
+    position: absolute;
     top: 100px;
     font-weight: 100;
-    font-family: 'Playfair';
+    font-family: 'gothamprol';
     left: 7%;
     display: inline;
 }
+
+
+
+.header4 {
+    font-size: 60px;
+    margin-bottom: 30px;
+    position: absolute;
+    top: 80px;
+    font-weight: 100;
+    font-family: 'gothamprol';
+    left: 7%;
+    display: inline;
+}
+
+.unlist {
+    list-style: none;
+    color: #FFF;
+    line-height: 1.3;
+    padding: 0;
+    white-space: nowrap;
+}
+.contacts_header {
+    font-size: 20px;
+    line-height: 2;
+    font-weight: 600;
+}
+
 
 .about_info2 {
     margin: 0 auto;
@@ -163,11 +277,28 @@ a:hover {
 .advantages {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+
+.advantages2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+    padding: 60px 7% 60px 4%;
+}
+
+.else_button {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .adva_item {
     font-size: 50px;
-    font-family: 'Playfair';
+    font-family: 'gothamprol';
     color: #d9bc7c;
     font-weight: 200;
 }
@@ -182,7 +313,7 @@ a:hover {
 }
 
 .adva_description {
-    font-family: 'Playfair';
+    font-family: 'gothamprol';
     text-transform: lowercase;
     font-weight: 200;
     width: 150px;
@@ -197,18 +328,17 @@ a:hover {
 
 .text {
     line-height: 1.5;
-    font-family: 'Playfair';
+    font-family: 'gothamprol';
     font-weight: 300;
     font-size: 17px;
 
 }
 
-.about_info {
-    margin-top: 5%;
-    z-index: 1;
+.about_info {    
     max-width: 550px;
+    position: absolute;
     min-width: 350px;
-    margin-left: 7%;
+    z-index: 100;
     display: flex;
     flex-direction: column;
 }
@@ -252,14 +382,16 @@ a:hover {
     font-size: 18px;
     text-align: right;
     cursor: pointer;
-    font-weight: 600;
+    /* font-weight: 600; */
     text-decoration: underline;
+    font-family: "Gothamprob";
 }
 
 .slogan_2 {
     font-size: 30px;
-    margin-top: 10px;
+    margin-top: 30px;
     font-weight: 600;
+    margin-bottom: 35px;
     line-height: 1.2;
 }
 
@@ -272,7 +404,7 @@ a:hover {
     transform: rotate(180deg);
     writing-mode: vertical-rl;
     position: absolute;
-    font-size: 200px;
+    font-size: 150px;
     height: 100%;
     color: #8080800f;
     z-index: -100;
@@ -287,23 +419,29 @@ a:hover {
     margin: 0;
     flex-wrap: wrap;
     width: calc((100%) - 80px);
-    position: relative;
+    
 }
 
 
 .gallery_item {
-    opacity: 0.2;
-    object-fit: cover;
-    height: auto;
-    width: 33.333%;
+    opacity: 0.7;
+    object-fit: cover;    
+    height: 100%;
+    
 }
 
 .gallery_item:hover {
     opacity: 1;
     transition: 0.5s;
     cursor: pointer;
+    -webkit-animation: moveBackground 120s linear infinite;
+    animation: moveBackground 120s linear infinite;
 }
 
+.overflow {
+    width: 33.333%;
+    overflow: hidden;
+}
 
 .gallery_item:hover::after {
     width: 80px;
@@ -323,8 +461,19 @@ a:hover {
     background: url(../images/slide_2_bg.png) no-repeat;
     height: 1080px;
     background-position: bottom 0 right 30%;
-    background-size: 70%;
+    background-size: 80%;
     font-weight: 600;
+    padding: 100px 7%;
+    position: relative;
+}
+
+.slide_5 {
+    
+    height: 1080px;
+    background-position: bottom 0 right 30%;
+    background-size: 80%;
+    font-weight: 600;
+    padding: 100px 7%;
     position: relative;
 }
 
@@ -340,10 +489,12 @@ a:hover {
     color: #FFF;
     white-space: nowrap;
     margin: 0;
-    font-size: 18px;
+    font-size: 13px;
+    font-family: "Gothampro";
     flex-wrap: wrap;
     padding: 0;
     height: 20px;
+    text-transform: uppercase;
 }
 
 .ul_menu_right {
@@ -387,14 +538,16 @@ a:hover {
 }
 
 .genplan {
+    justify-content: center;
     position: absolute;
     left: 7%;
-    padding: 20px 150px 0px 50px;
+    align-items: center;
+    display: flex;    
     top: calc((100%/2) - 300px);
 }
 
 .genplan img {
-    width: 100%;
+    width: 90%;
 }
 
 .parking_img {
@@ -445,15 +598,41 @@ a:hover {
 
 }
 
+.twitter {
+    background: url(../images/twitter.svg);
+    background-repeat: no-repeat;
+}
+.facebook {
+    background: url(../images/facebook.svg);
+    background-repeat: no-repeat;
+}
+.insta {
+    background: url(../images/insta.svg);
+    background-repeat: no-repeat;
+}
+.social {    
+    height: 40px;
+}
+
+.lists_style {
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    align-items: center;
+}
+
 button {
     background-color: #e5c790;
-    padding: 15px 30px;
+    padding: 25px 30px;
     background: linear-gradient(180deg, rgba(237, 204, 139, 0.75) 0%, rgba(0, 0, 0, 0) 100%), rgb(177 151 83 / 91%);
-    border-radius: 7px;
-    font-family: 'Playfair';
+    border-radius: 55px;
+    font-family: 'gothamprol';
     color: white;
     border: none;
-    font-size: 20px;
+    font-size: 18px;
     width: 270px;
 }
 
@@ -462,12 +641,18 @@ button {
     line-height: 1.3;
     padding: 0;
     min-width: 180px;
+    min-height: 115px;
     margin-bottom: 30px;
     margin-right: 40px;
 }
 
 .advantages ul {
     padding: 0;
+    margin-right: 20px;
+}
+
+.advantages ul:nth-child(2) {
+    margin-right: 0px;
 }
 
 .whatsapp:hover {
@@ -489,6 +674,7 @@ button:hover {
     background-color: #E3C27D;
     cursor: pointer;
     color: #493c19;
+    box-shadow: 1px 1px 25px -7px #929292;
 }
 
 .burger {
@@ -518,10 +704,11 @@ button:hover {
 }
 
 .top_phone {
-    font-size: 21px;
+    font-size: 19px;
     display: flex;
     align-items: center;
     font-weight: 600;
+    font-family: "gothamprob";
 }
 
 .top_phone img {
@@ -545,7 +732,7 @@ button:hover {
     position: fixed;
     display: flex;
     align-items: center;
-    padding: 35px 7%;    
+    padding: 35px 7%;
     height: 80px;
     z-index: 200;
     font-weight: 400;
@@ -557,7 +744,7 @@ button:hover {
     transform: rotate(180deg);
     writing-mode: vertical-rl;
     margin-bottom: 30px;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .metters {
@@ -572,16 +759,10 @@ button:hover {
 .icon {
     position: relative;
     overflow: hidden;
-
     display: inline-block;
-
-    border-radius: 5px;
     color: #fff;
     text-decoration: none;
     text-align: center;
-
-
-
 }
 
 /**
@@ -616,4 +797,20 @@ button:hover {
 
 .icon:active:after {
     opacity: 0;
+}
+
+
+.custom-page-seliger__benefits-item {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    min-width: 340px;    
+    max-width: 500px;
+    width: calc(33.33% - 27px);
+    background: rgb(243, 243, 243);
+    border-radius: 2px;
+    color: #2e253b;
+    transition: .3s ease;
+    box-sizing: border-box;
+    cursor: pointer;    
 }

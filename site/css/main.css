@@ -259,6 +259,11 @@ a:hover {
     padding: 0;
     white-space: nowrap;
 }
+
+.unlist a {
+    text-decoration: none;
+    color: #FFF;
+}
 .contacts_header {
     font-size: 20px;
     line-height: 2;
@@ -427,6 +432,7 @@ a:hover {
     opacity: 0.7;
     object-fit: cover;    
     height: 100%;
+    width: 100%;
     
 }
 
@@ -612,6 +618,7 @@ a:hover {
 }
 .social {    
     height: 40px;
+    margin-top: 10px;
 }
 
 .lists_style {

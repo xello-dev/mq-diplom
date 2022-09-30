@@ -13,6 +13,18 @@
         font-size: 21px;
         margin-top: 0;
     }
+    .top_header {
+        display: none;
+    }
+
+    .ul_menu2 {        
+        line-height: 2;        
+        font-size: 24px;        
+    }
+
+    .big_menu {
+        padding: 40px 50px;
+    }
 
     .custom-page-seliger__benefits-item {
         min-width: 100%;
@@ -109,9 +121,10 @@
     }
     .burger_mobile {
         display: block;
-        background: url(../images/burger.png);
-        width: 45px;
-        height: 45px;
+        background: url(../images/burger5.svg);
+        width: 30px;
+        height: 30px;
+        filter: invert(1);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -200,7 +213,7 @@
         margin-top: 10px;
         line-height: 1.2;
     } 
-    }
+    
     .btn {
         padding: 1.35rem 1.9rem;
         display: -ms-inline-flexbox;
@@ -387,9 +400,7 @@
         justify-content: space-between;
     }
 
-    .top_header {
-        display: none;
-    }
+    
 
     .slide_1 {
         height: 765px;
@@ -425,7 +436,7 @@
         right: 40px;
         width: 200px;
     }
-
+}
     
 
 
@@ -439,6 +450,13 @@
 
     button {
         width: 100%;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .top_menu_mobile {
+
+        display: none;
     }
 }
 
@@ -458,17 +476,16 @@
     }
 
     .burger_mobile {
-        display: block;
-        background: url(../images/burger.png);
-        width: 45px;
-        height: 45px;
+        display: none;
+        background: url(../images/burger5.svg);
+        width: 30px;
+        height: 30px;
+        filter: invert(1);
         background-repeat: no-repeat;
         background-size: cover;
     }
 
-    .burger {
-        display: none;
-    }
+    
 
     .top_menu_mobile {
         z-index: 100000;

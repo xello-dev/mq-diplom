@@ -13,11 +13,7 @@
 </head>
 
 <body>
-    <!-- Domoplaner widget code -->
-    <script>
-        (function (d, o, m, p, l, a, n) { d, a.async = 1, a.src = p, n.parentNode.insertBefore(a, n) })(window, document, "script", "https://domoplaner.ru/catalog/sw.js", "dplanloader"); dplanloader("set", "xxx/yyyyyy");
-    </script>
-    <!-- /Domoplaner widget code -->
+<!-- Domoplaner widget code --><script>(function(d,o,m,p,l,a,n){d[l]=d[l]||function(){(d[l].n=d[l].n||[]).push(arguments)};d[l].l=1*new Date();a=o.createElement(m),n=o.getElementsByTagName(m)[0],a.async=1,a.src=p,n.parentNode.insertBefore(a,n)})(window, document, "script", "https://domoplaner.ru/catalog/sw.js", "dplanloader");dplanloader("set","290/GC8NEv");</script><!-- /Domoplaner widget code -->
     <div class="big_menu">
 
 
@@ -210,7 +206,26 @@
 
     </section>
 
+    <div id="dp-genplan" style="margin: auto;"></div>
 
+    <script>
+    dplanloader(function(DP){
+        DP.insertGenplan('#dp-genplan');
+    });
+    </script>
+    
+    <style>
+    #dp-genplan {
+      font-family: 'TildaSans',Arial,sans-serif;
+      width: 1160px;
+    }
+    
+    @media only screen and (max-width: 1160px) {
+        #dp-genplan {
+            display:none;
+        }
+    }
+    </style>
 
 
     <section class="advantages2">

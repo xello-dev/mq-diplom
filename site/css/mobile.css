@@ -11,6 +11,9 @@
     .logo_top {
         left: calc(50% - 44px);
     }
+    .top_phone {
+        font-size: 21px;
+    }
 
     .left {
         width: 100%;
@@ -247,7 +250,7 @@
     .whatsapp_mobile {
         z-index: 1000000;
         position: absolute;
-        right: 90px;
+        right: 70px;
     }
 
     .order {
@@ -280,7 +283,7 @@
 
     .burger_mobile {
         display: block;
-        background: url(../images/burger5.svg);
+        background: url(../images/burgerMenu.svg);
         width: 30px;
         height: 30px;
         filter: invert(1);
@@ -322,7 +325,7 @@
     .slide_4,
     .parking,
     .map {
-        padding: 40px 30px;
+        padding: 40px 25px;
     }
 
     .maps_bg {
@@ -559,7 +562,7 @@
     }
 
     .slogan_phone {
-        font-size: 25px;
+        font-size: 35px;
         margin-bottom: 20px;
         margin-top: 75px;
     }
@@ -747,7 +750,7 @@
 
     .burger_mobile {
         display: none;
-        background: url(../images/burger5.svg);
+        background: url(../images/burgerMenu.svg);
         width: 30px;
         height: 30px;
         filter: invert(1);

@@ -1,25 +1,48 @@
 * {
     box-sizing: border-box;
+    font-family: 'Sourse_Sans_reg';
+}
+
+hr {
+    border-color: #d3bea7;
 }
 
 html,
 body,
-div,
-img {
+div {
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
     font: inherit;
-    vertical-align: baseline;
+    font-family: 'raleway';
 }
 
-body {
-    line-height: 1;
-    font-family: 'gothamprol';
+body .infrastructure-map {
+    height: 100%;
+}
+
+.infrastructure-map {
+    position: absolute;
+    left: initial;
+    right: 0;
+    top: 0;
+    height: calc(100% + 2rem);
+}
+
+.main-wrapper {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
 }
 
 
+.main-wrapper__background {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
 
 @keyframes moveBackground {
 
@@ -68,12 +91,68 @@ body {
 
 
 @font-face {
-    font-family: "GothamProb";
-    src: url("../fonts/gothampro_black.ttf") format("truetype");
+    font-family: "p22";
+    src: url("../fonts/P22UndergroundCYMedium.ttf") format("truetype");
 }
 
 
+@font-face {
+    font-family: "p22b";
+    src: url("../fonts/P22UndergroundCYBook.ttf") format("truetype");
+}
 
+@font-face {
+    font-family: "sharp";
+    src: url("../fonts/Sharp.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "play";
+    src: url("../fonts/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "month";
+    src: url("../fonts/Mont-HeavyDEMO.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "montr";
+    src: url("../fonts/Mont-Regular.woff");
+}
+
+@font-face {
+    font-family: "montbl";
+    src: url("../fonts/Mont-Black.woff");
+}
+
+@font-face {
+    font-family: "montb";
+    src: url("../fonts/Mont-Bold.woff");
+}
+@font-face {
+    font-family: "montsb";
+    src: url("../fonts/Mont-SemiBold.woff");
+}
+
+@font-face {
+    font-family: "montl";
+    src: url("../fonts/Mont-Light.woff");
+}
+@font-face {
+    font-family: "montxl";
+    src: url("../fonts/Mont-ExtraLight.woff");
+}
+
+@font-face {
+    font-family: "angst";
+    src: url("../fonts/Angst-0.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "raleway";
+    src: url("../fonts/Raleway.ttf") format("truetype");
+}
 
 a {
     color: #ffffff;
@@ -93,10 +172,14 @@ a:hover {
 
 
 .slide_1 {
-    background: url('../images/bg_main.jpg') no-repeat;
+    background: url(../images/bg_main.jpg) no-repeat;
     background-size: cover;
-    height: 1080px;
-    background-position: top 0 center;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    filter: hue-rotate(351deg);
+    align-items: center;
+    background-position: top center;
     box-sizing: border-box;
     position: relative;
 }
@@ -113,16 +196,51 @@ a:hover {
 }
 
 
-
 .slide_4 {
-    background: url('../images/genplan_bg.jpg') no-repeat;
+    background: url(../images/bg_adva.jpg) no-repeat;
     background-size: cover;
     height: 1080px;
     background-position: top 0 center;
     box-sizing: border-box;
     position: relative;
-    padding: 100px 7%;
+    padding: 117px 12% 0 6%;
+
 }
+
+.genplan_button {
+    position: absolute;
+    overflow: hidden;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    bottom: 70px;
+    left: 0;
+    margin: 0 auto;
+    right: 0;
+}
+
+.slide_4::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+    background-color: #28436aeb;
+
+}
+
+.podlogka {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+
+
+
 
 .parking {
     background: url('../images/parking.jpg') no-repeat;
@@ -131,26 +249,77 @@ a:hover {
     background-position: top 0 center;
     box-sizing: border-box;
     position: relative;
+    padding: 130px 10%;
 }
 
 .contacts {
-    background-color: #2e253b;    
-    height: 400px;    
+    background-color: #202E49;
     position: relative;
-    padding: 115px 7%;
+    /* padding: 250px 11% 0 7%; */
+    padding-top: 250px;
+    padding-left: 7%;
+    padding-bottom: 0;
+    padding-right: calc((17%) - 80px);
     color: #FFF;
-    
 }
 
-.copyright {
-    background-color: #292234;
-    height: 40px;    
-    position: relative;
-    padding: 10px 7%;
+#logo_bottom {
     display: flex;
-    color: #FFF;
-    align-items: center;
-    justify-content: end;
+    justify-content: center;
+    position: relative;
+    
+
+}
+
+.logo_block_item img {
+    width: 200px;
+    height: auto;
+    padding: 50px;
+    position: absolute;
+    display: flex;
+    top: -194px;
+}
+
+
+.menu_checked a {
+    text-decoration: none;
+    color: #ffe1be;
+
+}
+
+.contacts_blocks {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 55px;
+
+}
+
+.contacts_blocks_item {
+    width: 33%;
+}
+
+.contacts_blocks_item .unlist li {
+    color: #fff2e3;
+    font-family: raleway;
+}
+
+.logo_block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.logo_block_item {
+    width: 33%;
+}
+
+.copyright {        
+    padding-bottom: 50px;
+    display: flex;
+    color: #8f8f8f;
+    margin-top: 150px;
+    align-items: flex-start;    
 }
 
 .hello {
@@ -158,18 +327,51 @@ a:hover {
     font-size: 12px;
 
 }
+
+.copyright_item:nth-child(3) {
+    font-size: 12px;    
+    text-align: right;
+}
+
 .copyright img {
     width: 50px;
+    margin-left: 10px;
+    opacity: 0.6;
+}
+.logo_top_shadow {
+    filter: blur(4px);
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+
+.logo_top {
+    position: absolute;
+    top: 100px;
+    left: 90px;
+    z-index: 10000;
 }
 
 
-
-.contacts_blocks {
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    justify-content: space-between;
+.logo_top img {
+    height: 200px;
 }
+
+.copyright_item:nth-child(2) {
+    font-size: 12px;
+    width: 70%;
+    text-align: center;
+}
+
+.copyright_item:nth-child(1) {
+    font-size: 12px;    
+    text-align: left;
+}
+
+.copyright_item:nth-child(odd) {
+    width: 15%;
+}
+
 
 
 .map {
@@ -180,10 +382,10 @@ a:hover {
     position: relative;
 }
 
-.maps_info {    
+.maps_info {
     z-index: 111;
     position: absolute;
-    box-sizing: content-box;    
+    box-sizing: content-box;
 }
 
 .maps_bg {
@@ -204,41 +406,80 @@ a:hover {
 }
 
 .slogan {
-    font-family: 'gothampro';
-    font-size: min(12vw, 90px);
-    width: 55%;
-    line-height: 0.9;
+    font-size: 4vw;
+    text-shadow: 9px 13px 7px rgb(0 0 0 / 68%);
+    line-height: 1.1;
+    position: relative;
+    font-family: 'angst';
 }
+
+.slogan::before {
+    width: 106px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    content: '';
+    height: 40px;
+    position: fixed;
+    top: -46px;
+    background: url(../images/agurtop.svg) no-repeat;
+}
+
+.slogan::after {
+    width: 106px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    content: '';
+    height: 40px;
+    position: fixed;
+    bottom: -54px;
+    background: url(../images/agurbottom.svg) no-repeat;
+}
+
 
 .top_menu_mobile {
     display: none;
 }
 
 .header {
-    font-size: 60px;
+    font-size: 4vw;
     position: relative;
     font-weight: 100;
-    font-family: 'gothamprol';
+    font-family: 'angst';
     display: inline;
     margin-bottom: 20px;
-    
+
 }
 
+.about_info_header {
+    color: #FFF;
+    line-height: 1.6;
+    font-weight: 300;
+    font-family: 'angst';
+    letter-spacing: 3.5px;
+    font-size: 17px;
+    text-align: center;
+    position: relative;
+}
 
 .header2 {
-    font-size: 60px;
-    margin-bottom: 20px;
-    font-family: 'gothamprol';
+    font-size: 4vw;
+    text-align: center;
+    font-family: 'angst';
+    margin-bottom: 17px;
+    position: relative;
+
 }
 
 .header3 {
     font-size: 60px;
     margin-bottom: 30px;
     position: absolute;
-    top: 100px;
+    top: 120px;
     font-weight: 100;
     font-family: 'gothamprol';
-    left: 7%;
+    left: 10%;
     display: inline;
 }
 
@@ -261,42 +502,129 @@ a:hover {
     line-height: 1.3;
     padding: 0;
     white-space: nowrap;
+    text-align: right;
+}
+
+.header_bottom_text {
+    font-size: 19px;
+}
+
+.contacts_blocks_center {
+    gap: 29px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.contacts_blocks_center a {
+ color: #ffe1be;   
+ font-size: 19px;
+}
+
+.button_outline {
+    background-color: unset;
+    background: unset;
+    border: 1px solid #FFF;
+    max-width: 310px;
+}
+.button_outline:hover {
+    border-color:#202e49 ;
+
 }
 
 .unlist a {
     text-decoration: none;
     color: #FFF;
 }
+
 .contacts_header {
     font-size: 20px;
     line-height: 2;
     font-weight: 600;
 }
-
-
+.tel_bottom {
+    font-size: 40px;
+    line-height: 2;
+    font-family: 'angst';
+    color: #fff2e3;
+    
+}
+.header_bottom {
+    color: #8A8A8A!important;
+    font-size: 18px;
+}
 .about_info2 {
     margin: 0 auto;
-    width: 66%;
+    width: 70%;
     bottom: 200px;
     margin-top: 30px;
-
 }
 
-.advantages {
+.space {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     
 }
 
+.adva_button {
+    display: flex;
+    flex-wrap: wrap;
+
+}
 
 .advantages2 {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10% 60px 10%;
+    
+}
+
+.advantages2 .space .adva_item {
+    font-size: 17px;
+    color: #000;
+    font-family: 'gothampro';
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.advantages2 .space  .adva_description {
+    font-size: 14px;
+    width: 100%;
+    line-height: 1.3;
+    color: #8b8b8b;
+}
+.space_column {
+    width: 29%;
+}
+
+
+.space_column_set {
+    display: flex;    
+    align-items: center;
+}
+.space_column_set_desc {
+    padding: 20px 0 20px 20px;
+}
+
+.advantages2 ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+.dop_advantages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
     
     padding: 60px 7% 60px 4%;
 }
+
 
 .else_button {
     display: flex;
@@ -307,8 +635,8 @@ a:hover {
 }
 
 .adva_item {
-    font-size: 50px;
-    font-family: 'gothamprol';
+    font-size: 3vw;
+    font-family: 'angst';
     color: #d9bc7c;
     font-weight: 200;
 }
@@ -316,17 +644,22 @@ a:hover {
 .adva_bottom {
     display: flex;
     flex-wrap: wrap;
+    gap: 25px;
 }
 
-.but1 {
-    margin-bottom: 20px;
+.but2 {
+    background: #ffffff;
+    color: #d0ba88;
+    border: 1px solid #d0ba88;  
 }
 
-.adva_description {
-    font-family: 'gothamprol';
+
+.adva_description {    
     text-transform: lowercase;
     font-weight: 200;
-    width: 150px;
+    padding-right: 13%;
+
+    color: #8b8b8b;
 }
 
 .astralogo {
@@ -337,33 +670,245 @@ a:hover {
 }
 
 .text {
-    line-height: 1.5;
-    font-family: 'gothamprol';
+    line-height: 1.6;    
     font-weight: 300;
     font-size: 17px;
+    margin-top: 15px;
+    color: #8b8b8b;
 
 }
 
-.about_info {    
+
+.about_info .text {
+    padding-bottom: 50px;
+}
+
+.min {
+    margin-top: 0!important;
+    margin-bottom: 0!important;
+}
+
+.min2 {
+    margin-top: 0!important;
+    margin-bottom: 150px!important;
+}
+
+.info_image img {
+    border-radius: 0px 79px 0px 88px;
+    width: 100%;
+    /* padding: 40px 0px 40px 0px; */
     max-width: 550px;
-    position: absolute;
-    min-width: 350px;
-    z-index: 100;
-    display: flex;
-    flex-direction: column;
 }
+
+
+.priziv_slogan {
+    background-color: #ffffffe0;
+    border-radius: 65px 0;
+    width: 500px;
+    padding: 52px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;    
+    aspect-ratio: 4/4;
+    position: absolute;
+    right: 10%;
+}
+
+.priziv_slogan .header {
+    font-size: 3.5vw;
+    line-height: 1;
+    font-family: 'montr';
+
+}
+
+.priziv {
+    padding: 125px 10% 125px 10%;
+    height: 902px;
+    position: relative;
+    background: url(../images/bottomhouse.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-right: 80px;
+}
+
+
+.left {
+    width: 50%;    
+    display: flex;
+    margin-top: 17px;    
+    flex-direction: column;
+    
+}
+
+.right {
+    width: 47%;
+    min-width: 500px;
+    max-height: 500px;
+    min-width: 350px;
+}
+
+.undertext {
+    margin-bottom: 50px;
+    margin-right: 70px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.two_column .header_small {
+    font-family: 'angst';
+    font-size: 17px;
+    margin-bottom: 22px;
+    letter-spacing: 3.5px;
+    color: #a2a2a2;
+}
+
+.right_oproekte {
+    margin-top: 75px;   
+    padding-left: 5%;
+    line-height: 1.6;
+    padding-right: 5%;
+    font-weight: 300;
+    font-size: 17px;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.right_oproekte ul {
+    padding-left: 25px;
+}
+
+.utochnenie {
+    margin-bottom: 35px;
+    list-style: none;
+}
+
+.utochnenie_header {
+    font-family: 'angst';
+    font-size: 17px;
+    font-weight: 600;
+    color: #d0ba88;
+
+}
+
+
+.utochnenie_header::before {
+    width: 10px;
+    border-radius: 55px;
+    content: '';
+    height: 10px;
+    background-color: #d0ba88;
+    position: absolute;
+    margin-top: 5px;
+    left: 0px;
+}
+
+.utochnenie_desc {    
+    font-size: 14px;
+    color: #8b8b8b;
+    
+}
+
+
+.information {
+    padding: 125px 12% 125px 10%;
+    position: relative;
+}
+
+.mobile_info, .mobile_info2 {display: none;}
+
+
+.information_2 {
+    padding: 125px 10% 125px 10%;
+    position: relative;
+}
+
+.information_2 .two_column .left {
+
+    
+    
+}
+
+
+
 
 .burger_mobile {
     display: none;
 }
 
+.slide2_photo {
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+    height: 700px;
+    position: relative;
+    background-position: center;
+    background-size: cover !important;
+    background: url(../images/bg_adva.jpg) no-repeat;
+}
+
+.house_info_topheader {
+    font-weight: 400;
+    font-size: 35px;
+    padding: 20px 0;
+    line-height: 73.9%;
+    color: #FFFFFF;
+}
+
+.house_info_header {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 14px;
+    line-height: 1.2;
+    color: #D9BB7B;
+}
+
+.house_text {
+    font-size: 1.5vw;
+    font-weight: 100;
+    font-family: 'raleway';
+}
+
+.house_info_item {
+    margin-bottom: 20px;
+}
+
+.house_info_desc {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.1;
+    color: #FFFFFF;
+}
+
+.slide2_photo .arrows {
+    position: absolute;
+}
+
+
+.house_info {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 442px;
+    height: 457px;
+    background: rgba(40, 67, 106, 0.89);
+    border-radius: 79px 0px 79px 0px;
+    right: 35px;
+    top: 35px;
+    padding: 40px 40px 40px 50px;
+}
+
 .new {
-    color: #333444!important;
+    color: #333444 !important;
 }
 
 .new2 {
-    filter: unset!important;
+    filter: unset !important;
 }
+
 .new3 {
     display: none;
 }
@@ -391,21 +936,46 @@ a:hover {
     text-align: center;
 }
 
-.top_phone_order {
-    color: #E3C27D;
-    font-size: 18px;
-    text-align: right;
-    cursor: pointer;
-    /* font-weight: 600; */
-    text-decoration: underline;
-    font-family: "Gothamprob";
+.top_menu {
+    height: 25px;
+}
+
+.vertical_menu {
+    flex-direction: column;
+    font-size: 18px!important;
+    line-height: 1.7;
 }
 
 
 
+.top_phone_order {
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: right;
+    cursor: pointer;
+    /* font-weight: 600; */
+    font-family: 'raleway';
+    
+}
+
+.top_phone_order a {
+    color: #E3C27D !important;
+}
+
+.mouse {
+    justify-content: center;
+    display: flex;
+    margin: 0 0 30px 0;
+    position: absolute;
+    bottom: 100px;
+
+    filter: invert(1);
+}
+
 .slogan_phone a {
     text-decoration: none;
     color: white;
+    font-family: 'angst';
 }
 
 .slogan_2 {
@@ -418,7 +988,7 @@ a:hover {
 
 .slogan_phone {
     font-size: 45px;
-    font-weight: 600;
+    margin-top: 62px;
 }
 
 .offtop {
@@ -440,16 +1010,16 @@ a:hover {
     margin: 0;
     flex-wrap: wrap;
     width: calc((100%) - 80px);
-    
+
 }
 
 
 .gallery_item {
     opacity: 0.7;
-    object-fit: cover;    
+    object-fit: cover;
     height: 100%;
     width: 100%;
-    
+
 }
 
 .gallery_item:hover {
@@ -479,25 +1049,78 @@ a:hover {
     content: '';
 }
 
-.slide_2 {
-    background: url(../images/slide_2_bg.png) no-repeat;
-    height: 1080px;
-    background-position: bottom 0 right 30%;
-    background-size: 80%;
-    font-weight: 600;
-    padding: 100px 7%;
-    position: relative;
+.two_column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 70px 77px 200px;
+    margin: 0;
 }
 
-
-.slide_5 {
-    
-    height: 1080px;
-    background-position: bottom 0 right 30%;
-    background-size: 80%;
-    font-weight: 600;
-    padding: 100px 7%;
+.slide_2 {
+    padding: 125px 12% 0 10%;
     position: relative;
+}
+.progress_filter {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+.progress_filter_item {
+    width: 300px;
+}
+.filter_item {
+    font-weight: 600;
+    font-family: 'gothamprom';
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+.filter_month {
+    font-size: 14px;
+}
+
+.progress_gallery_item {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 4/4;
+    max-width: 275px;
+    border-radius: 0 56px;
+
+}
+.progress_gallery_item img {
+    width: 100%;
+    height: 100%;
+}
+
+.progress_gallery {
+    display: flex;    
+    flex-wrap: wrap;
+    gap: 34px;
+}
+
+.progress_gallery_item_date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    border-radius: 0 0 26px 0;
+    color: #FFF;
+    justify-content: center;
+    align-items: center;
+    background-color: #303F5B;
+}
+
+.progress {    
+    padding: 130px 14% 50px 10%;
+}
+
+.progress .about_info_header {
+    color: #a2a2a2;
+    text-align: left;
+    text-transform: uppercase;
 }
 
 .slide_3 {
@@ -512,11 +1135,10 @@ a:hover {
     color: #FFF;
     white-space: nowrap;
     margin: 0;
-    font-size: 13px;
-    font-family: "Gothampro";
+    font-size: 18px;    
     flex-wrap: wrap;
-    padding: 0;    
-    text-transform: uppercase;
+    padding: 0;
+
 }
 
 .close {
@@ -527,7 +1149,7 @@ a:hover {
     width: 25px;
     height: 25px;
     padding: 0;
-    background-size: cover!important;
+    background-size: cover !important;
     height: 25px;
     background: url(../images/close.svg) no-repeat;
     filter: invert(1);
@@ -536,15 +1158,16 @@ a:hover {
 .close:hover {
     background-color: unset;
 }
-.ul_menu2 {    
+
+.ul_menu2 {
     list-style: none;
-    line-height: 1.5;
+    line-height: 1.6;
     white-space: nowrap;
     margin: 0;
     font-size: 41px;
     font-family: "Gothampro";
     flex-wrap: wrap;
-    padding: 0;    
+    padding: 0;
 }
 
 .ul_menu_right {
@@ -565,17 +1188,30 @@ a:hover {
 }
 
 .ul_menu li {
-    margin-right: 30px;
+    margin-right: 40px;
     cursor: pointer;
-    font-weight: 600;
+}
+
+@-webkit-keyframes slide {
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes slide {
+    100% {
+        left: 0;
+    }
 }
 
 .ul_menu li:hover {
     color: #FFD874;
-    border-bottom: 2px solid #a78c48;
+
 }
+
+
 .ul_menu2 li:hover {
-    color: #FFD874;    
+    color: #FFD874;
     cursor: pointer;
     padding-left: 5px;
     transition: 0.3s;
@@ -589,23 +1225,51 @@ a:hover {
     position: absolute;
     color: white;
     line-height: 2;
-    margin: 260px 7%;
+    text-align: center;
+    margin: 260px 9%;
+}
+
+fieldset {
+    border: 1px solid #b9a065;
+    display: flex;
+    width: 100%;
+    z-index: 10000000;
+    align-items: center;
+    height: 100%;
+    padding: 50px;
+    margin: 0;
+    position: relative;
+}
+
+
+.about_info {
+    width: 100%;
+    margin-right: 50px;
+    /* margin: 0 auto; */
+    height: 70%;
+}
+
+
+
+
+legend {
+    color: #339dc7;
+    text-align: center;
 }
 
 .genplan {
-    justify-content: center;
-    position: absolute;
-    left: 7%;
+    justify-content: center;    
+    margin: 0 auto;
     align-items: center;
-    display: flex;    
-    top: calc((100%/2) - 300px);
+    
 }
 
 .genplan img {
-    width: 90%;
+    width: 100%;
+    padding: 3%;
 }
 
-.big_menu {    
+.big_menu {
     color: #FFF;
     position: fixed;
     width: 100%;
@@ -616,7 +1280,7 @@ a:hover {
     background-size: cover;
     height: 1080px;
     background-position: top 0 center;
-    box-sizing: border-box;    
+    box-sizing: border-box;
     display: none;
 }
 
@@ -641,9 +1305,9 @@ a:hover {
 
 
 .parking_img {
-    margin: auto;
-    width: 70%;
-    padding-top: 150px;
+    margin: 0 auto;
+    width: 75%;
+
 }
 
 .parking_img img {
@@ -676,9 +1340,10 @@ a:hover {
     position: absolute;
     color: #FFF;
     bottom: 50px;
-    left: 7%;
-    font-size: 14px;
-    width: 50%;
+    /* left: 9%; */
+    text-align: center;
+    font-size: 13px;
+    width: 70%;
 }
 
 .side_social {
@@ -693,15 +1358,18 @@ a:hover {
     background: url(../images/twitter.svg);
     background-repeat: no-repeat;
 }
+
 .facebook {
     background: url(../images/facebook.svg);
     background-repeat: no-repeat;
 }
+
 .insta {
     background: url(../images/insta.svg);
     background-repeat: no-repeat;
 }
-.social {    
+
+.social {
     height: 40px;
     margin-top: 10px;
 }
@@ -720,27 +1388,34 @@ button {
     background-color: #e5c790;
     padding: 20px 30px;
     background: linear-gradient(180deg, rgba(237, 204, 139, 0.75) 0%, rgba(0, 0, 0, 0) 100%), rgb(177 151 83 / 91%);
-    border-radius: 55px;
-    font-family: 'gothamprol';
+    border-radius: 5px;
+    font-family: 'angst';
     color: white;
     border: none;
     font-size: 15px;
-    width: 270px;
+    max-width: 270px;
+    min-width: 230px;
+    position: relative;
+    overflow: hidden;
+}
+
+.advantages {
+    margin-top: 50px;
 }
 
 .advantages ul li {
     list-style: none;
     line-height: 1.3;
-    padding: 0;
-    min-width: 180px;
-    min-height: 115px;
-    margin-bottom: 30px;
-    margin-right: 40px;
+    padding: 0;    
+    width: 16.66%;
+    /* min-height: 115px; */
+    /* margin-right: 40px; */
 }
 
 .advantages ul {
     padding: 0;
     margin-right: 20px;
+    margin-bottom: 7vh;
 }
 
 .advantages ul:nth-child(2) {
@@ -758,9 +1433,6 @@ button {
 }
 
 
-.but2 {
-    background: #1e3e75;
-}
 
 button:hover {
     background-color: #E3C27D;
@@ -772,7 +1444,7 @@ button:hover {
 .burger {
     position: absolute;
     z-index: 1000000000;
-        width: 30px;
+    width: 30px;
     height: 30px;
     filter: invert(1);
 }
@@ -783,6 +1455,17 @@ button:hover {
     z-index: 1000000000;
 }
 
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
 .side_bar {
     position: fixed;
@@ -794,16 +1477,21 @@ button:hover {
     z-index: 500000000;
     height: 100%;
     width: 80px;
-    background-color: rgb(24 29 46 / 76%);
+    background-color: #313F5B;
     color: #FFF;
+    background: linear-gradient(106deg, #40004f, #234466, #16121a, #234566);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
 }
 
 .top_phone {
-    font-size: 19px;
+    font-size: 25px;
     display: flex;
     align-items: center;
-    font-weight: 600;
-    font-family: "gothamprob";
+}
+
+.top_phone a {
+    font-family: 'angst';
 }
 
 .top_phone img {
@@ -827,9 +1515,9 @@ button:hover {
     position: fixed;
     display: flex;
     align-items: center;
-    padding: 35px 5%;
+    padding: 35px 2%;
     height: 80px;
-    z-index: 200;
+    z-index: 20000;
     font-weight: 400;
     /* background: rgb(24 29 46 / 76%); */
     justify-content: space-between;
@@ -839,26 +1527,20 @@ button:hover {
     transform: rotate(180deg);
     writing-mode: vertical-rl;
     margin-bottom: 30px;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .metters {
-    font-size: 30px;
+    font-size: 1.8vw;
     position: absolute;
+    font-family: 'angst';
 }
 
 /**
  * Icon
  */
 
-.icon {
-    position: relative;
-    overflow: hidden;
-    display: inline-block;
-    color: #fff;
-    text-decoration: none;
-    text-align: center;
-}
+
 
 /**
    * The "shine" element
@@ -899,7 +1581,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     padding: 30px;
-    min-width: 340px;    
+    min-width: 340px;
     min-height: 250px;
     max-width: 500px;
     width: calc(33.33% - 27px);
@@ -908,5 +1590,5 @@ button:hover {
     color: #2e253b;
     transition: .3s ease;
     box-sizing: border-box;
-    cursor: pointer;    
+    cursor: pointer;
 }

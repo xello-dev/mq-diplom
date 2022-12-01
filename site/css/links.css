@@ -135,26 +135,11 @@ a:focus-visible {
     list-style: none;
 }
 
-.content__item {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    counter-increment: itemcounter;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+.content__item {    
+    display: inherit;
 }
 
-.content__item::before {
-    color: var(--color-number);
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: counters(itemcounter, ".", decimal-leading-zero);
-}
+
 
 .link {
     cursor: pointer;
@@ -179,10 +164,7 @@ a:focus-visible {
     /* show by default */
 }
 
-.link--metis {
-    font-family: bely-display, sans-serif;
-    text-transform: lowercase;
-}
+
 
 .link--metis::before {
     transform-origin: 100% 50%;
@@ -645,9 +627,9 @@ a:focus-visible {
 }
 
 .link--iocaste {
-    font-family: lust-fine, sans-serif;
+    
     overflow: hidden;
-    padding: 7px 0;
+ padding-bottom: 7px;
 }
 
 .link__graphic {
@@ -656,7 +638,7 @@ a:focus-visible {
     left: 0;
     pointer-events: none;
     fill: none;
-    stroke: #000;
+    stroke: #FFF;
     stroke-width: 1px;
 }
 

@@ -193,6 +193,13 @@ a:hover {
 }
 
 
+.zaslonka {
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(180deg, rgb(34 68 102) 0%, rgba(255, 255, 255, 0) 86%);
+    width: 100%;
+    z-index: 1;
+}
 .slide_4 {
     background: url(../images/bg_adva.jpg) no-repeat;
     background-size: cover;
@@ -215,6 +222,7 @@ a:hover {
     left: 0;
     margin: 0 auto;
     right: 0;
+    min-width: 293px;
 }
 
 .slide_4::before {
@@ -411,7 +419,7 @@ a:hover {
     font-family: 'angst';
 }
 
-.slogan::before {
+/* .slogan::before {
     width: 52px;
     right: 0;
     left: 0px;
@@ -439,7 +447,7 @@ a:hover {
     position: fixed;
     bottom: -35px;
     background: url(../images/topper.png) no-repeat;
-}
+} */
 
 
 .top_menu_mobile {
@@ -453,6 +461,7 @@ a:hover {
     font-family: 'angst';
     display: inline;
     margin-bottom: 20px;
+    overflow: hidden;
 
 }
 
@@ -793,6 +802,7 @@ a:hover {
 .utochnenie {
     margin-bottom: 35px;
     list-style: none;
+    position: relative;
 }
 
 .utochnenie_header {
@@ -811,8 +821,8 @@ a:hover {
     height: 10px;
     background-color: #d0ba88;
     position: absolute;
-    margin-top: 5px;
-    left: 0px;
+    margin-top: 8px;
+    left: -21px;
 }
 
 .utochnenie_desc {
@@ -997,7 +1007,8 @@ a:hover {
 
 .slogan_phone {
     font-size: 45px;
-    margin-top: 62px;
+    margin-top: 27px;
+    margin-bottom: 20px;
 }
 
 .offtop {
@@ -1241,6 +1252,7 @@ a:hover {
     line-height: 2;
     text-align: center;
     margin: 260px 9%;
+    z-index: 1000;
 }
 
 fieldset {
@@ -1451,8 +1463,8 @@ button {
 button:hover {
     background-color: #E3C27D;
     cursor: pointer;
-    color: #493c19;
-    box-shadow: 1px 1px 25px -7px #929292;
+    color: #ffffff;
+    box-shadow: 1px 1px 25px -7px #929292;    
 }
 
 .burger {

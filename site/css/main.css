@@ -200,6 +200,14 @@ a:hover {
     width: 100%;
     z-index: 1;
 }
+.zaslonka {
+height: 100%;
+    position: absolute;
+    background: linear-gradient(180deg, rgb(0 2 76 / 81%) 0%, rgba(255, 255, 255, 0) 86%);
+    width: 100%;
+    z-index: 1;
+}
+
 .slide_4 {
     background: url(../images/bg_adva.jpg) no-repeat;
     background-size: cover;
@@ -360,7 +368,7 @@ a:hover {
 
 
 .logo_top img {
-    height: 200px;
+    height: 250px;
 }
 
 .copyright_item:nth-child(2) {
@@ -800,14 +808,14 @@ a:hover {
 }
 
 .utochnenie {
-    margin-bottom: 35px;
+    margin-bottom: 21px;
     list-style: none;
     position: relative;
 }
 
 .utochnenie_header {
     font-family: 'angst';
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 600;
     color: #d0ba88;
 
@@ -826,7 +834,7 @@ a:hover {
 }
 
 .utochnenie_desc {
-    font-size: 14px;
+    font-size: 16px;
     color: #8b8b8b;
 
 }
@@ -1241,6 +1249,8 @@ a:hover {
     padding-left: 5px;
     transition: 0.3s;
 }
+
+
 
 .menu_checked {
     color: #FFD874;

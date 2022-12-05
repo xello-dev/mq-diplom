@@ -16,6 +16,7 @@ div {
     font-size: 100%;
     font: inherit;
     font-family: 'raleway';
+    scroll-behavior: smooth;
 }
 
 body .infrastructure-map {
@@ -1568,7 +1569,7 @@ button:hover {
     align-items: center;
     padding: 35px 2%;
     height: 80px;
-    z-index: 20000;
+    z-index: 200000000;
     font-weight: 400;
     /* background: rgb(24 29 46 / 76%); */
     justify-content: space-between;

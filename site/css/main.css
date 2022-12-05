@@ -196,14 +196,7 @@ a:hover {
 .zaslonka {
     height: 100%;
     position: absolute;
-    background: linear-gradient(180deg, rgb(34 68 102) 0%, rgba(255, 255, 255, 0) 86%);
-    width: 100%;
-    z-index: 1;
-}
-.zaslonka {
-height: 100%;
-    position: absolute;
-    background: linear-gradient(180deg, rgb(0 2 76 / 81%) 0%, rgba(255, 255, 255, 0) 86%);
+    background: linear-gradient(180deg,#013a4d 0%, rgba(255, 255, 255, 0) 86%);
     width: 100%;
     z-index: 1;
 }
@@ -240,7 +233,7 @@ height: 100%;
     top: 0;
     left: 0;
     content: '';
-    background-color: #28436aeb;
+    background: #013a4de0;
 
 }
 
@@ -266,7 +259,7 @@ height: 100%;
 }
 
 .contacts {
-    background-color: #202E49;
+    background-color: #013a4d;
     position: relative;
     /* padding: 250px 11% 0 7%; */
     padding-top: 250px;
@@ -420,9 +413,9 @@ height: 100%;
 }
 
 .slogan {
-    font-size: 4vw;
+    font-size: 4.5vw;
     text-shadow: 9px 13px 7px rgb(0 0 0 / 68%);
-    line-height: 1.1;
+    line-height: 1.2;
     position: relative;
     font-family: 'angst';
 }
@@ -585,6 +578,11 @@ height: 100%;
     margin-top: 30px;
 }
 
+.about_info fieldset legend img {
+    margin: 0 14px;
+    padding-bottom: 14px;
+}
+
 .space {
     display: flex;
     flex-wrap: wrap;
@@ -698,11 +696,14 @@ height: 100%;
 }
 
 .text {
+    font-variant: petite-caps;
     line-height: 1.6;
     font-weight: 300;
-    font-size: 17px;
+    font-size: 18px;
+    /* letter-spacing: 0.4px; */
+    /* font-family: 'angst'; */
     margin-top: 15px;
-    color: #8b8b8b;
+    color: #7d7d7d;
 
 }
 
@@ -841,7 +842,7 @@ height: 100%;
 
 
 .information {
-    padding: 125px 12% 125px 10%;
+    padding: 225px 12% 125px 10%;
     position: relative;
 }
 
@@ -852,7 +853,7 @@ height: 100%;
 
 
 .information_2 {
-    padding: 125px 10% 125px 10%;
+    padding: 225px 10% 225px 10%;
     position: relative;
 }
 
@@ -878,8 +879,9 @@ height: 100%;
 
 .house_info_topheader {
     font-weight: 400;
-    font-size: 35px;
+    font-size: 29px;
     padding: 20px 0;
+    font-family: 'angst';
     line-height: 73.9%;
     color: #FFFFFF;
 }
@@ -887,15 +889,16 @@ height: 100%;
 .house_info_header {
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;    
+    font-size: 16px;
+    font-family: 'angst';
     line-height: 1.2;
     color: #D9BB7B;
 }
 
 .house_text {
-    font-size: 1.5vw;
+    font-size: 19px;
     font-weight: 100;
-    font-family: 'raleway';
+    font-family: 'angst';
 }
 
 .house_info_item {
@@ -905,6 +908,7 @@ height: 100%;
 .house_info_desc {
     font-weight: 400;
     font-size: 40px;
+    font-family: 'angst';
     line-height: 1.1;
     color: #FFFFFF;
 }
@@ -921,7 +925,7 @@ height: 100%;
     flex-direction: column;
     width: 442px;
     height: 457px;
-    background: rgba(40, 67, 106, 0.89);
+    background: #013a4de0;
     border-radius: 79px 0px 79px 0px;
     right: 35px;
     top: 35px;
@@ -1143,7 +1147,7 @@ height: 100%;
     color: #FFF;
     justify-content: center;
     align-items: center;
-    background-color: #303F5B;
+    background-color: #013a4d;
 }
 
 .progress {
@@ -1180,7 +1184,7 @@ height: 100%;
     right: 20px;
     top: 20px;
     width: 25px;
-    height: 25px;
+    height: 25px !important;
     padding: 0;
     background-size: cover !important;
     height: 25px;
@@ -1194,13 +1198,14 @@ height: 100%;
 
 .ul_menu2 {
     list-style: none;
-    line-height: 1.6;
+    line-height: 11vh;
     white-space: nowrap;
     margin: 0;
-    font-size: 41px;
+    font-size: 8vh;
     font-family: "Gothampro";
     flex-wrap: wrap;
     padding: 0;
+    text-align: center;
 }
 
 .ul_menu_right {
@@ -1243,12 +1248,6 @@ height: 100%;
 }
 
 
-.ul_menu2 li:hover {
-    color: #FFD874;
-    cursor: pointer;
-    padding-left: 5px;
-    transition: 0.3s;
-}
 
 
 
@@ -1302,26 +1301,26 @@ legend {
 
 .genplan img {
     width: 100%;
-    padding: 3%;
+    padding: 7%;
 }
 
 .big_menu {
-    color: #FFF;
     position: fixed;
+    justify-content: center;
     width: 100%;
-    height: 100%;
-    padding: 100px 100px;
+    padding: 100px 100px 100px 11%;
     z-index: 6000000000;
     background: url(../images/bg_main.jpg) rgba(0, 0, 0, 0.699) no-repeat;
     background-size: cover;
-    height: 1080px;
+    height: 100%;
     background-position: top 0 center;
     box-sizing: border-box;
     display: none;
+    align-items: center;
 }
 
 .bigmenu_bg {
-    background: #201b2bed;
+    background: #013a4df0;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -1332,18 +1331,9 @@ legend {
     bottom: 0;
 }
 
-
-.big_menu_item {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-
 .parking_img {
     margin: 0 auto;
     width: 75%;
-
 }
 
 .parking_img img {
@@ -1474,7 +1464,7 @@ button:hover {
     background-color: #E3C27D;
     cursor: pointer;
     color: #ffffff;
-    box-shadow: 1px 1px 25px -7px #929292;    
+    box-shadow: 1px 1px 25px -7px #929292;
 }
 
 .burger {
@@ -1517,7 +1507,7 @@ button:hover {
     width: 80px;
     background-color: #313F5B;
     color: #FFF;
-    background: linear-gradient(106deg, #40004f, #234466, #16121a, #234566);
+    background: linear-gradient(106deg, #40004f, #013a4d, #16121a, #234566);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 }

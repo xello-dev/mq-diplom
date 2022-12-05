@@ -148,6 +148,13 @@ a:focus-visible {
     white-space: nowrap;    
 }
 
+.link_big {
+    cursor: pointer;
+    font-size: *vh;
+    position: relative;
+    white-space: nowrap;    
+}
+
 .link::before,
 .link::after {
     position: absolute;
@@ -159,11 +166,25 @@ a:focus-visible {
     pointer-events: none;
 }
 
+.link_big::before,
+.link_big::after {
+    position: absolute;
+    width: 100%;
+    height: 0.5px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
 .link::before {
     content: '';
     /* show by default */
 }
 
+.link_big::before {
+    content: '';
+    /* show by default */
+}
 
 
 .link--metis::before {

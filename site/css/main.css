@@ -772,6 +772,7 @@ a:hover {
     padding: 125px 10% 125px 10%;
     height: 902px;
     position: relative;
+    margin-top: 10%;
     background: url(../images/bottomhouse.jpg) no-repeat;
     background-position: center center;
     background-size: cover;
@@ -1150,6 +1151,7 @@ a:hover {
 
 .progress_gallery {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 34px;
 }

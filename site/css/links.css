@@ -150,7 +150,7 @@ a:focus-visible {
 
 .link_big {
     cursor: pointer;
-    font-size: *vh;
+    font-size: 8vh;
     position: relative;
     white-space: nowrap;    
 }

@@ -722,11 +722,28 @@ a:hover {
     margin-bottom: 150px !important;
 }
 
-.info_image img {
+.info_image {
     border-radius: 0px 79px 0px 88px;
     width: 100%;
+    
     /* padding: 40px 0px 40px 0px; */
     max-width: 550px;
+}
+
+
+.info_image img{
+    border-radius: 0px 79px 0px 88px;
+    width: 100%;
+    
+    /* padding: 40px 0px 40px 0px; */
+    max-width: 550px;
+}
+.info_image_map {
+    border-radius: 0px 79px 0px 88px;
+    /* padding: 40px 0px 40px 0px; */
+    max-width: 550px;
+    overflow: hidden;
+    filter: hue-rotate(275deg) grayscale(1);
 }
 
 
@@ -851,20 +868,20 @@ a:hover {
     display: none;
 }
 
+#okno:target {
+    display: flex;    
+}
+
+
+#burger_close:target {
+    display: none;
+    transition: all 0.5s ease;}
 
 .information_2 {
     padding: 225px 10% 225px 10%;
     position: relative;
 }
 
-.information_2 .two_column .left {}
-
-
-
-
-.burger_mobile {
-    display: none;
-}
 
 .slide2_photo {
     margin-top: 100px;
@@ -1316,6 +1333,7 @@ legend {
     background-position: top 0 center;
     box-sizing: border-box;
     display: none;
+    overflow: hidden;    
     align-items: center;
 }
 
@@ -1473,12 +1491,16 @@ button:hover {
     width: 30px;
     height: 30px;
     filter: invert(1);
+    margin: 0 auto;
+    left: 0;
+    right: 0;
 }
 
 .burger_mobile {
     position: absolute;
     right: 20px;
     z-index: 1000000000;
+    cursor: pointer;
 }
 
 @keyframes gradient {

@@ -18,16 +18,16 @@
 </head>
 
 <body>
-    <div class="big_menu">
+    <div class="big_menu" id="okno">
         <div class="big_menu_item ">
             <ul class="ul_menu2">
                 
                 <li><a href="#" class="link_big link--metis wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.3s" data-wow-offset="10" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.3s; animation-name: fadeInUp;">Галерея</a></li>
-                <li><a href="#" class="link_big link--metis wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.3s" data-wow-offset="10" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.3s; animation-name: fadeInUp;">Инфраструктура</a></li>
-                <li><a href="#" class="link_big link--metis wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.3s" data-wow-offset="10" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.3s; animation-name: fadeInUp;">Квартиры</a></li>
-                <li><a href="#" class="link_big link--metis wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.3s" data-wow-offset="10" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.3s; animation-name: fadeInUp;">Паркинг</a></li>
-                <li><a href="#" class="link_big link--metis wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.3s" data-wow-offset="10" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.3s; animation-name: fadeInUp;">Ход строительства</a></li>
-                <li><a href="#" class="link_big link--metis wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.3s" data-wow-offset="10" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.3s; animation-name: fadeInUp;">Контакты</a></li>
+                <li><a href="#" class="link_big link--metis wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.4s" data-wow-offset="10" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.3s; animation-name: fadeInUp;">Инфраструктура</a></li>
+                <li><a href="#" class="link_big link--metis wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s" data-wow-offset="10" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.3s; animation-name: fadeInUp;">Квартиры</a></li>
+                <li><a href="#" class="link_big link--metis wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.6s" data-wow-offset="10" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.3s; animation-name: fadeInUp;">Паркинг</a></li>
+                <li><a href="#" class="link_big link--metis wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.7s" data-wow-offset="10" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.3s; animation-name: fadeInUp;">Ход строительства</a></li>
+                <li><a href="#" class="link_big link--metis wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.8s" data-wow-offset="10" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.3s; animation-name: fadeInUp;">Контакты</a></li>
             </ul>
             <!-- <ul class="lists_style">
                 <li><a href=""><img src="images/insta.svg" alt=""></a></li>
@@ -57,7 +57,7 @@
         <div class="bigmenu_bg">
             
         </div>
-        <div class="close"></div>
+        <a href="#burger_close"><div class="close"></div> </a>
     </div>
 
     
@@ -69,11 +69,11 @@
             $(window).scrollTop() > 100 ? $('.top_phone a').addClass('new') : $('.top_phone a').removeClass('new');
             $(window).scrollTop() > 100 ? $('.burger_mobile').addClass('new2') : $('.burger_mobile').removeClass('new2');
             $(window).scrollTop() > 100 ? $('.top_phone_order').addClass('new3') : $('.top_phone_order').removeClass('new3');
-            $(window).scrollTop() > 100 ? $('.link--metis').addClass('new') : $('.link--metis').removeClass('new');
+            $(window).scrollTop() > 100 ? $('.link').addClass('new') : $('.link').removeClass('new');
         });
     </script>
     <div class="side_bar">
-        <div class="burger whatsapp"><img style="width: 100%" src="images/burgerMenu.svg" alt=""></div>
+        <a href="#okno"><div class="burger whatsapp"><img style="width: 100%" src="images/burgerMenu.svg" alt=""></div></a>
         <div class="side_social">
             <ul class="ul_menu_right">
                 <li class="whatsapp"><a href="#"><img src="images/insta.svg" alt=""></a> </li>
@@ -427,8 +427,10 @@
             </div>
 
             <div class="right">
-                <div class="info_image  wow animate__fadeIn" data-wow-delay="0.6s" data-wow-duration="1.5s">
-                    <img src="images/center.jpg" alt="">
+                <div class="info_image_map  wow animate__fadeIn" data-wow-delay="0.6s" data-wow-duration="1.5s">
+                    <!-- <img src="images/center.jpg" alt=""> -->
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A780f9e9699946f9e0f7bccf1626a34daa3bacda9d9c33beebc4975a3ee6eec78&amp;width=550&amp;height=550&amp;lang=ru_RU&amp;scroll=true"></script>
+
                 </div>
             </div>
         </div>

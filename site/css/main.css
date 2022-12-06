@@ -770,13 +770,15 @@ a:hover {
 
 .priziv {
     padding: 125px 10% 125px 10%;
-    height: 902px;
+    height: 1060px;
     position: relative;
     margin-top: 10%;
     background: url(../images/bottomhouse.jpg) no-repeat;
-    background-position: center center;
+    background-position: top center;
     background-size: cover;
     padding-right: 80px;
+    display: flex;
+    align-items: center;
 }
 
 

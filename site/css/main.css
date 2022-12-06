@@ -1083,6 +1083,14 @@ a:hover {
     animation: moveBackground 120s linear infinite;
 }
 
+.progress_gallery_item img:hover {
+    opacity: 1;
+    transition: 0.5s;
+    cursor: pointer;
+    -webkit-animation: moveBackground 20s linear infinite;
+    animation: moveBackground 20s linear infinite;
+}
+
 .overflow {
     width: 33.333%;
     overflow: hidden;
